@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <div class="container"></div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi, i'm Babu Natarajan</title>
+    <style>
+        *{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+     height: 4950px;
+     width: 100%;
+     background: linear-gradient(45deg,#e7031e,#5240d5,#ed891f);
+     background-size: 300% 300%;
+    animation:color 12s ease-in-out infinite;
+}
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+/* that's all compleate the over all back ground*/
+.glass{
+   position: absolute;
+   width: 100%;
+   height: 120px;
+   background: rgba(255,255, 255, .1);
+   box-shadow: 0 25px 45px rgba(0,0, 0, .2);
+  backdrop-filter: blur(10px);
+   border-radius: 30px;
+   
+   
+}
+body{
+    display: flex;      
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 150px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    z-index:100;
+    
+}
+.logo{
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    right: 50px;
+    font-size: 35px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight:700 ;
+}
+.navbar a{
+    position: relative;
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    margin-left: 40px;
+}
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+}
+.navbar a:hover::before{
+    width: 100%;
+}
+.navbar{
+    font-size: 40px;
+}
+.Header{
+    
+        font-size: 6rem;
+        margin-top: 400px;
+        letter-spacing: 3px;
+        text-align: center;
+      
+        font-weight: 800;
+    
+}
+
+.ptag{
+    
+    top: 350px;
+    
+    font-size: 2.2rem;
+    text-align: center;
+    width: 100%;
+    line-height: 1.6;
+}
+
+
+span{
+    color: #fff;
+    
+}
+.about{
+    text-align: center;
+   font-weight: 800;
+   font-size: 6rem;
+   position: relative;
+   top: 450px;
+}
+.do{ 
+    position: relative;
+    top: 470px;
+    font-size: 2.2rem;
+    text-align: center;
+    width: 100%;
+    line-height: 1.6;
+    
+}
+
+
+a#botton{
+    position: relative;
+    height: 10em;
+    width: 6.25em;
+    border: 0.5em solid white;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 6.25em;
+    border-radius: 3em; 
+}
+a#botton::before{
+    position: absolute;
+    content: "";
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 1.2;
+    height: 1.2;
+    background-color: black;
+    border-radius: 50%;
+    animation: move-down infinite;
+}
+@keyframes move-down{
+    80%{
+        opacity: 0.5;
+    }
+    100%{
+        transform: translateY(5.3em);
+        opacity: 0;
+    }
+}
+.contact{ 
+    position: absolute;
+    background: rgba(255,255, 255, .1);
+    box-shadow: 0 25px 45px rgba(0,0, 0, .2);
+   
+    height: 300px;
+    width: 80px;
+    top: 650px;
+    border-radius: 10px;
+}
+li{
+    position: relative;
+    
+    left: 30px;
+}
+.ul{
+   
+   list-style: none;
+      
+}
+
+div {
+    display: block;
+}
+.tw{
+    height: 50px;
+    width: 50px;
+}
+.social{
+  position: relative;
+  top: 15px;
+  left: 15px; 
+  box-sizing: inherit; 
+}
+.firstdiv{
+    position: relative;
+    top: 500px;
+    height: 500px;
+    width: 500px;
+}
+.about__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10rem;
+    position: relative;
+    top: 500px;
+    text-align: center;
+    left: 50px;
+}
+.para{
+    position: relative;
+    top: 50px;
+    font-size: 2.2rem;
+    text-align: center;
+    width: 100%;
+    line-height: 1.6;
+}
+.title{
+    font-size: 3.2rem;
+}
+.skill1{
+    margin-top: 70px;
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgba(255,255, 255, .1);
+    box-shadow: 0 25px 45px rgba(0,0, 0, .2);
+    text-align: center;
+      border-radius: 5px;
+      font-size: 30px;
+      margin-right: 20px;
+}
+.skill2{
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgba(255,255, 255, .1);
+    box-shadow: 0 25px 45px rgba(0,0, 0, .2);
+    text-align: center;
+      border-radius: 5px;
+      font-size: 30px;
+      margin-right: 20px;
+}
+.skill3{
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgba(255,255, 255, .1);
+    box-shadow: 0 25px 45px rgba(0,0, 0, .2);
+    text-align: center;
+      border-radius: 5px;
+      font-size: 30px;
+      margin-right: 20px;
+}
+.skill4{
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgba(255,255, 255, .1);
+    box-shadow: 0 25px 45px rgba(0,0, 0, .2);
+    text-align: center;
+      border-radius: 5px;
+      font-size: 30px;
+      margin-right: 20px;
+      margin-bottom: 25px;
+}
+.skill5{
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgba(255,255, 255, .1);
+    box-shadow: 0 25px 45px rgba(0,0, 0, .2);
+    text-align: center;
+      border-radius: 5px;
+      font-size: 30px;
+      margin-right: 20px;
+}
+.skill6{
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgba(255,255, 255, .1);
+    box-shadow: 0 25px 45px rgba(0,0, 0, .2);
+    text-align: center;
+      border-radius: 5px;
+      font-size: 30px;
+      margin-right: 20px;
+}
+.MySkills{
+    font-size: 3.2rem;
+}
+
+.btnproject{
+    display: inline-block;
+      padding: 30px 60px;
+      background: rgba(255,255, 255, .1);
+      box-shadow: 0 25px 45px rgba(0,0, 0, .2);
+      margin-top: 100px;
+      margin-left: 1000px;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: 900;
+      font-size: 2.2rem;
+}
+
+
+.btnprojects{
+    position: relative;
+    display: inline;
+    top: 850px;
+      padding: 30px 60px;
+      background: rgba(255,255, 255, .1);
+      box-shadow: 0 25px 45px rgba(0,0, 0, .2);
+      
+      margin-left: 1000px;
+      text-align: center;
+      
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: 900;
+      font-size: 2.2rem;
+}
+
+
+.wrapper{
+    padding: 10px 10%;
+}
+#card-area{
+    padding: 50px 0;
+   margin-top: 900px;
+}
+.box-area{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.box {
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+}
+.box img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.overlay {
+	width: 100%;
+	height: 0;
+	background: linear-gradient(transparent,#1c1c1c 58%);
+	border-radius: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 40px;
+	text-align: center;
+	font-size: 50px;
+	transition: height 0.5s;
+}
+.overlay h3 {
+	font-weight: 500;
+	margin-bottom: 5px;
+	margin-top: 80%;
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 30px;
+	letter-spacing: 2px;
+}
+.overlay a {
+	margin-top: 10px;
+	color: #262626;
+	text-decoration: none;
+	font-size: 30px;
+	background: rgba(255,255, 255, .1);
+	border-radius: 50px;
+	text-align: center;
+	padding: 5px 15px;
+}
+.box:hover img{
+    transform: scale(1.1);
+}
+.box:hover .overlay{
+    height: 100%;
+}
+
+.button-like {
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgba(255,255, 255, .1);
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 90px;
+}
+
+
+.fromm{
+    position: relative;
+    height: 600px;
+    margin-top: 500px;
+    width: 1100px;
+    margin-left: 600px;
+    background: rgba(255,255, 255, .1);
+    box-shadow: 0 25px 45px rgba(0,0, 0, .2);
+    border-radius: 10px;
+
+}
+form {
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: rgba(255,255, 255, .1);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    top: 40px;
+    font-size: 30px;
+}
+.name{
+    position: relative;
+    top: 40px;
+    font-size: 30px;
+}
+#name{
+    position: relative;
+    top: 40px;
+    font-size: 30px;
+    background-color: rgba(255,255, 255, .1);
+}
+.email{
+    position: relative;
+    top: 40px;
+    font-size: 30px;
+}
+#email{
+    position: relative;
+    top: 40px;
+    font-size: 30px;
+    background-color: rgba(255,255, 255, .1);
+}
+.message{
+    position: relative;
+    top: 40px;
+    font-size: 30px;
+}
+#message{
+    position: relative;
+    top: 40px;
+    font-size: 30px;
+    background-color: rgba(255,255, 255, .1);
+}
+.btnprojectss{
+    position: relative;
+    display: inline;
+    top: 400px;
+      padding: 30px 60px;
+      background: rgba(255,255, 255, .1);
+      box-shadow: 0 25px 45px rgba(0,0, 0, .2);
+      
+      margin-left: 1000px;
+      text-align: center;
+      
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: 900;
+      font-size: 2.2rem;
+}
+
+.Footer{
+    position: relative;
+    height: 300px;
+    width: 100%;
+    margin-top: 100px;
+    background: rgba(255,255, 255, .1);
+    box-shadow: 0 25px 45px rgba(0,0, 0, .2);
+}
+
+.Footercontact{
+    
+    position: relative;
+    height: 8cqb;
+    width: 300px;
+    top: 15px;
+    margin-top: 40px;
+    background: rgba(255,255, 255, .1);
+    box-shadow: 0 25px 45px rgba(0,0, 0, .2);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    left: 1900px;
+
+}
+.Footerh1{
+   position: relative;
+   top: 120px;
+   left: 70px;
+}
+    </style>
+   
+</head>
+<body>
+    <div class="glass">
+   <header class="header">
+    <a href="#" class="logo">logo</a>
+    <nav class="navbar">
+        <a href="#" class="home">Home</a>
+        <a href="#" class="home">About</a>
+        <a href="#" class="home">Portfolio</a>
+        <a href="#" class="home">Project</a>
+        <a href="#" class="home">Contact</a>
+
+    </nav>
+
+   </header>
+   <div class="contact">
+    <div class="social">
+        <a href="#">
+          <img src= "./git.png"  class="tw">
+        </a>
+      </div><br>
+    <div class="social">
+        <a href="#">
+          <img  src= "./in.png" class="tw">
+        </a>
+      </div><br>
+    <div class="social">
+        <a href="#">
+          <img src= "./tw.png" class="tw">
+        </a>
+      </div>
+      <br>
+    <div class="social">
+        <a href="#">
+          <img src= "./yt.png" class="tw">
+        </a>
+      </div><br>
+   </div>
+   
+
+   <div class="second">
+   <h1 class="Header">Hi, i'm Babu<span>Natarajan</span></h1>
+   <br>
+   <p class="ptag">A Frontend focused Web Developer building the Frontend of Websites and Web Applications <br>that leads to the success of the overall product</p>
+</div>
+
+<div class="btnproject">Project</div>
+<h3 class="about">ABOUT ME</h3>
+<p class="do">Here you will find more information about me, what I do, and my current<br> skills mostly in terms of programming and technology</p>
+ <br>
+<div class="about__content">
+    <div class="about__content-main">
+      <h3 class="title">Get to know me!</h3>
+      <div class="about__content-details">
+        <p class="para"> 
+          Hello!👋 I'm <strong>Babu Natarajan</strong>  ,an aspiring front-end developer passionate about crafting delightful and intuitive digital experiences.<br> 
+              <br>I'm  <strong>Frontend Focused Web Developer</strong> I have a strong foundation in <strong>HTML, CSS, </strong>and<strong>JavaScript</strong>  , and I'm proficient in utilizing modern
+               frameworks like <strong>React</strong> ,
+               and I'm constantly expanding my knowledge by exploring new technologies and frameworks.  eager to learn from experienced developers and contribute my skills to a team environment.
+        </p>
+        <br>
+        <p class="para">
+          Check out some of my work in the <strong>Projects</strong>  section.
+        </p>
+        
+      </div>
+      <a href="./#contact" class="Contactbtn"></a>
+    </div>
+    <div class="contentskills">
+      <h3 class="MySkills">My Skills</h3>
+      <div class="Skills">
+        <div class="skill1">HTML</div>
+        <div class="skill2">CSS</div>
+        <div class="skill3">Bootstrap</div>
+        <div class="skill4">JavaScript</div><br>
+        <div class="skill5">React</div>
+        <div class="skill6">Github</div>
+        <div class="skill6">Python</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="btnprojects">Project</div>
+  <div id="card-area">
+		<div class="wrapper">
+			<div class="box-area">
+				<div class="box">
+					<img alt="" src="./project1.png">
+					<div class="overlay">
+						<h3 class="imgname">Whac a Mole game </h3>
+            <div class="button-like" onclick="window.location.href='https://babucd.github.io/new-game-file/'">Check</div>
+					</div>
+				</div>
+				<div class="box">
+					<img alt="" src="./project2.png">
+					<div class="overlay">
+						<h3>personal portfolio website</h3>
+            <div class="button-like" onclick="window.location.href='#'">Check</div>
+					</div>
+				</div>
+				<div class="box">
+					<img alt="" src="img/3.jpg">
+					<div class="overlay">
+						<h3>Hello World !</h3>
+            <div class="button-like" onclick="window.location.href='#'">Check</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+  <div class="btnprojectss">Project</div>
+
+  <div class="fromm">
+    <form action="" method="post">
+      <label for="name"class="name">Name:</label>
+      <input type="text"  id="name" name="name" required placeholder="Enter your name">
+  
+      <label for="email" class="email">Email:</label>
+      <input type="email" id="email" name="email" required placeholder="Enter your Email">
+  
+      <label for="message" class="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+  
+      <button type="submit">Submit</button>
+  </form>
+  </div>
+  <footer class="Footer">
+    <h1 class="Footerh1">© 2024 Company, Inc</h1>
+    <div class="Footercontact">
+      
+      <div class="social">
+          <a href="#">
+            <img src= "./git.png"  class="tw">
+          </a>
+        </div><br>
+      <div class="social">
+          <a href="#">
+            <img  src= "./in.png" class="tw">
+          </a>
+        </div><br>
+      <div class="social">
+          <a href="#">
+            <img src= "./tw.png" class="tw">
+          </a>
+        </div>
+        <br>
+      <div class="social">
+          <a href="#">
+            <img src= "./yt.png" class="tw">
+          </a>
+        </div><br>
+     </div></div>
+  </footer>
+  <hr>
+</div>
+</body>
+</html>
